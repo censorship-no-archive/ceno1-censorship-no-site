@@ -1,8 +1,76 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #17211D;
+}
+
+header {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  left: 0;
+  right: 0;
+  top: -50px;
+  z-index: 1;
+  position: fixed;
+  height: 30px;
+  display: block;
+  background-color: #313633;
+  color: #fff;
+  padding: 50px;
+  margin-bottom: 10px;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+
+span.bold {
+  font-weight: bold;
+}
+
+span.italic {
+  font-style: italic;
+}
+
+div#main-container {
+  margin-top: 60px;
+}
+
+div.panel {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12);
+}
+
+div.hr {
+  border: none;
+  height: 1px;
+  background-color: #DDD;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fg-main {
+  color: #313633;
+}
+
+.bg-main {
+  background-color: #313633;
+}
+
+.fg-highlight {
+  color: #FF3D3D;
+}
+
+.bg-highlight {
+  background-color: #FF3D3D;
 }
