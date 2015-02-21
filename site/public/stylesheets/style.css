@@ -1,8 +1,10 @@
 body {
-  padding: 50px;
+  padding: 75px;
+  padding-left: 150px;
+  padding-right: 150px;
   background-color: #fff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #17211D;
 }
 
@@ -21,13 +23,26 @@ header {
   margin-bottom: 10px;
 }
 
+header h1 {
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+p {
+  line-height: 30px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-weight: normal;
+  color: #FF3D3D;
+}
+
+h2,h3,h4,h5,h6 {
+  margin-top: 100px;
 }
 
 span.bold {
@@ -38,8 +53,49 @@ span.italic {
   font-style: italic;
 }
 
+i#hamburger {
+  font-size: 28px;
+  display: inline;
+  float: left;
+  padding-right: 32px;
+  margin-top: 24px;
+  color: #999;
+}
+
+nav.table-of-contents {
+  margin-top: 40px;
+  border-left: 5px solid;
+  border-left-color: rgba(255, 61, 61, .65);
+  padding-left: 20px;
+  display: block;
+}
+
+nav.table-of-contents h1 {
+  font-size: 15px;
+  color: #757575;
+  font-weight: 400;
+}
+
+nav.table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+nav.table-of-contents ul li {
+  font-size: 20px;
+  color: #FF3D3D;
+  padding-left: 0;
+  margin-top: 20px;
+  line-height: 20px;
+  display: list-item;
+}
+
 div#main-container {
   margin-top: 60px;
+}
+
+div.grid {
+  margin-left: 0;
 }
 
 div.panel {
