@@ -76,6 +76,41 @@ nav.table-of-contents h1 {
   font-weight: 400;
 }
 
+nav#side-nav {
+  display: block;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: fixed;
+  overflow: auto;
+  width: 250px;
+  background-color: #fff;
+}
+
+nav#side-nav h2 {
+  color: #757575;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+nav#side-nav div.hr {
+  margin-top: 10px;
+}
+
+nav#side-nav ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+nav#side-nav ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: #FF3D3D;
+}
+
 nav.table-of-contents ul {
   list-style: none;
   padding-left: 0;
@@ -99,6 +134,16 @@ img.accompaniment {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+div#overlay {
+  background-color: rgba(0,0,0,.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999;
 }
 
 div#main-container {
