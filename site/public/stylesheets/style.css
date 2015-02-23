@@ -137,12 +137,20 @@ div.red {
 }
 
 div.green {
-  background-color: #00FF00;
+  background-color: #00EE00;
 }
 
 div.bar {
   width: 100%;
   height: 8px;
+}
+
+.fg-green {
+  color: #00C900;
+}
+
+.fg-red {
+  color: #EE3D3D;
 }
 
 .fg-main {
