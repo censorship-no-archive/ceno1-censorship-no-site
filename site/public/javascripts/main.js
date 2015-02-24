@@ -8,5 +8,6 @@
 
   document.getElementById('hamburger').addEventListener('click', function (evt) {
     overlay.style.display = '';
+    evt.preventDefault();
   });
 })();
