@@ -4,6 +4,7 @@
   <link href="/stylesheets/grid.css" rel="stylesheet" type="text/css" />
   <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+  <title> CeNo </title>
 </head>
 <body class="lato">
   <div class="container">
@@ -20,12 +21,12 @@
       </div>
       <div id="introbuttons">
         <div class="text-centered centered">
-          <div><button>GET CENO</button></div>
+          <div><a href="https://github.com/equalitie/ceno"><button>GET CENO</button></a></div>
           <div><span class="red">Download the CeNo package</span></div>
-          <div>if you live in a censored environment,</div>
+          <div>if you live in a heavily censored environment, download the CeNo package</div>
         </div>
         <div class="text-centered centered">
-          <div><button>GIVE CENO</button></div>
+          <div><a href="https://github.com/equalitie/ceno"><button>GIVE CENO</button></a></div>
           <div><span class="red">Set up your own CeNo edge</span></div>
           <div>to help CeNo users bypass censorship</div>
         </div>
@@ -41,18 +42,19 @@
     </div>
     <div class="container">
       <div class="grid">
-        <div class="text-centered grid__col grid__col--1-of-5 grid__col--push-1-of-5">
+        <div class="text-centered grid__col grid__col--1-of-5 grid__col--push-1-of-4">
           <img src="/images/icon_cenoclient.png" />
           <h2> CENO CLIENT </h2>
           <p>
-            Receives a website request and checks Freenet for contents
+            Receives a website request from the user and communicates it to Transport.
+            Displays received website content
           </p>
         </div>
-        <div class="text-centered grid__col grid__col--1-of-5 grid__col--push-1-of-5">
+        <div class="text-centered grid__col grid__col--1-of-5 grid__col--push-1-of-3">
           <img src="/images/icon_cenoedge.png" />
           <h2> CENO EDGE </h2>
           <p>
-            Retrieves a website and bundles it for storage
+            Retrieves a website and bundles all elements for Storage in Freenet
           </p>
         </div>
       </div>
@@ -63,20 +65,28 @@
           <img src="/images/icon_storage.png" />
           <h2> STORAGE </h2>
           <p>
-            Securely and anonymously distributed on Freenet
+            Secure and anonymous cache for bundled websites, distributed on Freenet nodes
           </p>
         </div>
         <div class="text-centered grid__col grid__col--1-of-5 grid__col--push-1-of-5">
           <img src="/images/icon_transport.png" />
           <h2> TRANSPORT </h2>
           <p>
-            Communications between CeNo components on Freenet
+            Communications between CeNo components on Freenet. Requests websites from Edges and bundles from Storage. Delivers to Client
           </p>
         </div>
       </div>
     </div>
   </div>
   <div clss="container">
+    <div class="grid">
+      <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-4">
+        <h2> WEBSITE INSERTION INTO FREENET </h2>
+      </div>
+      <div class="grid__col grid__col--1-of-4 grid__col--push-1-of-8">
+        <h2> WEBSITE AVAILABLE ON FREENET </h2>
+      </div>
+    </div>
     <div id="infographic2" class="centered">
       <img src="/images/ceno_infographic_02.png" />
     </div>
@@ -86,16 +96,7 @@
       <h1> WHY CENO? </h1>
     </div>
     <p id="whyceno">
-      Most circumvention systems face the proxy distribution problem - getting
-      its address to the user before the censor updates their blocklists. By
-      design, peer-to-peer networks have an advantage over this model with
-      every participant acting as a proxy for someone else. The protocol can
-      locate information anywhere on the network, without user knoweldge or
-      intervention. CeNo on top of an existing P2P network called Freenet, an
-      anonymous and highly encrypted network for file sharing and storage,
-      designed for censorship resistance. CeNo allows users to request Web
-      pages and store them in Freenet. Once a site has been insterted, it is
-      accessible to every CeNo user.
+    Most circumvention systems end up playing cat-and-mouse with the censor - getting unblocked proxy servers to the user before the  blocklists are updated. By design, peer-to-peer networks have an advantage with every participant acting as a proxy for someone else. The protocol can locate information anywhere on the network, without user knoweldge or intervention. CeNo is built on top of Freenet, an anonymous and highly encrypted network for file sharing and storage, designed for censorship resistance. CeNo allows users to request Web pages and store them inside the censored zone. Once a site is inserted into Freenet, it is accessible to every CeNo user. No further requests outside the censored zone are necessary.
     </p>
   </div>
   <div class="container">
@@ -107,22 +108,21 @@
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> ENCRYPTED TRANSPORT AND STORAGE </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Using a public key infrastructure, all content is encrypted during transit and at rest
           </p>
         </div>
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> PLAUSIBLE DENIABILITY </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Every file is uniquely encrypted and the keys distributed on the network.
+            A node cannot know what information it is storing for the network
           </p>
         </div>
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> COMPLETE ANONYMITY </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            No one knows which content a node is requesting or storing.
+            Its impossible to link a node on the network to an IP address
           </p>
         </div>
       </div>
@@ -137,26 +137,23 @@
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> GITHUB </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            This is an open source project, developed and hosted on GitHub. It will stay that way
           </p>
-          <div><button>VISIT GITHUB</button></div>
+          <div><a href="https://github.com"><button>VISIT GITHUB</button></a></div>
         </div>
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> FREENET </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Since 2000, one of the largest anonymous publishing networks with an estimated 100k nodes
           </p>
-          <div><button>VISIT FREENET</button></div>
+          <div><a href="https://freenetproject.org"><button>VISIT FREENET</button></a></div>
         </div>
         <div class="text-centered grid__col grid__col--1-of-3">
           <h2> BUNDLER </h2>
           <p>
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            A tool to transport websites as inlined static files, with confidentiality and integrity
           </p>
-          <div><button>VISIT BUNDLER</button></div>
+          <div><a href="https://github.com/equalitie/bundler"><button>VISIT BUNDLER</button></a></div>
         </div>
       </div>
     </div>

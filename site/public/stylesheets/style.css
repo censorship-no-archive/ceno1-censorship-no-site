@@ -154,6 +154,11 @@ button {
   font-weight: 400;
 }
 
+a {
+  color: #e43624;
+  text-decoration: none;
+}
+
 a.textlink {
   font-weight: 700;
   text-decoration: underline;
@@ -166,6 +171,11 @@ a.textlink:hover {
 
 a.textlink:visited {
   color: inherit;
+}
+
+a button {
+  cursor: pointer;
+  cursor: hand;
 }
 
 .red {
